@@ -38,7 +38,7 @@ const TestimonialsSection = () => (
             <div className="glass rounded-2xl p-7 hover-glow transition-all duration-500 h-full flex flex-col">
               <div className="flex gap-1 mb-5">
                 {Array.from({ length: 5 }).map((_, idx) => (
-                  <Star key={idx} size={16} className="fill-primary text-primary" />
+                  <Star key={idx} size={16} className="fill-accent text-accent" />
                 ))}
               </div>
               <p className="text-foreground/90 leading-relaxed mb-6 flex-1">"{t.quote}"</p>
