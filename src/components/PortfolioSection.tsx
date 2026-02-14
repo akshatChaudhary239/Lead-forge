@@ -14,14 +14,14 @@ const projects = [
     category: "Admin Dashboard",
     impact: "60% faster lead processing",
     desc: "An educational firm who expanded thie growth by 40% by going online ",
-    link: "#",
+    link: "https://cybervision-rajputsundrams-projects.vercel.app",
   },
   {
     title: "E-Commerce company",
     category: "Automation System",
     impact: "30 hrs/week saved",
     desc: "By getting their data handled automatically they reached a revenue of 20M",
-    link: "#",
+    link: "https://github.com/akshatChaudhary239/Revenue-ForeCasting-Model.git",
   },
   {
     title: "Online-business agency",
