@@ -10,8 +10,8 @@ const AboutSection = () => (
           Built by Founders Who <span className="gradient-text">Understand Growth</span>
         </h2>
         <p className="text-muted-foreground text-lg max-w-2xl mb-16 leading-relaxed">
-          LeadForge was born from a simple belief: every local business deserves the same
-          digital firepower as a Fortune 500 company. We combine cutting-edge technology
+          LeadForge was born from a simple belief - Every local business should keep a digital presence in this digital world. 
+          We combine cutting-edge technology
           with sharp business strategy to make that happen.
         </p>
       </SectionReveal>
@@ -20,15 +20,15 @@ const AboutSection = () => (
         {[
           {
             name: "Akku",
-            role: "Founder & Growth Strategist",
+            role: "Tech Lead",
             icon: <Target size={24} className="text-primary" />,
-            bio: "Obsessed with performance marketing and lead systems. Akku architects growth frameworks that turn clicks into clients, combining data-driven strategy with relentless execution.",
+            bio: "A builder at heart.With over 4+ years of experience my engineers are the automation pipelines, AI integrations, and high-performance web systems that power every LeadForge project.",
           },
           {
             name: "Prateek",
-            role: "Co-Founder & Tech Lead",
+            role: "Social Expert",
             icon: <Zap size={24} className="text-accent" />,
-            bio: "A builder at heart. Prateek engineers the automation pipelines, AI integrations, and high-performance web systems that power every LeadForge project.",
+            bio: "Obsessed with performance marketing and lead systems. With over 4+ years of experinece my architects growth frameworks that turn clicks into clients, combining data-driven strategy with relentless execution.",
           },
         ].map((p, i) => (
           <SectionReveal key={p.name} delay={i * 0.15}>

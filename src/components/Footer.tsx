@@ -45,10 +45,13 @@ const Footer = () => (
           <h4 className="font-display text-sm font-semibold mb-4">Get in Touch</h4>
           <ul className="space-y-3">
             <li className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Mail size={14} className="text-primary shrink-0" /> hello@leadforge.in
+              <Mail size={14} className="text-primary shrink-0" /> LeadForge123@gmail.com
             </li>
             <li className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Phone size={14} className="text-primary shrink-0" /> +91 98765 43210
+              <Phone size={14} className="text-primary shrink-0" /> 9350637421
+            </li>
+            <li className="flex items-center gap-2 text-sm text-muted-foreground">
+              <Phone size={14} className="text-primary shrink-0" /> 6375759278
             </li>
             <li className="flex items-start gap-2 text-sm text-muted-foreground">
               <MapPin size={14} className="text-primary shrink-0 mt-0.5" /> India
