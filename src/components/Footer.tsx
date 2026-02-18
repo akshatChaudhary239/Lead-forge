@@ -1,74 +1,35 @@
-import { Mail, Phone, MapPin } from "lucide-react";
-
-const Footer = () => (
-  <footer className="section-padding border-t border-border">
-    <div className="container-tight">
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
-        {/* Brand */}
-        <div className="sm:col-span-2 lg:col-span-1">
-          <h3 className="font-display text-xl font-bold mb-3">
-            Lead<span className="gradient-text">Forge</span>
-          </h3>
-          <p className="text-sm text-muted-foreground leading-relaxed">
-            Engineering digital growth systems for local businesses ready to dominate online.
+const Footer = () => {
+  return (
+    <footer className="relative z-0 bg-black text-white pt-20 pb-6 px-6 md:px-12 border-t border-white/10">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-10 md:gap-0 mb-20">
+        <div className="max-w-md">
+          <h3 className="text-2xl font-display font-bold mb-4">LEADFORGE</h3>
+          <p className="text-white/50 font-mono text-sm">
+            Redefining digital excellence through strategy, design, and technology.
           </p>
         </div>
 
-        {/* Quick Links */}
-        <div>
-          <h4 className="font-display text-sm font-semibold mb-4">Quick Links</h4>
-          <ul className="space-y-2.5">
-            {["About", "Services", "Portfolio", "Pricing", "Contact"].map((l) => (
-              <li key={l}>
-                <a href={`#${l.toLowerCase()}`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  {l}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Services */}
-        <div>
-          <h4 className="font-display text-sm font-semibold mb-4">Services</h4>
-          <ul className="space-y-2.5">
-            {["Web Development", "Lead Generation", "Automation", "Local SEO", "AI Solutions"].map((s) => (
-              <li key={s}>
-                <span className="text-sm text-muted-foreground">{s}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Contact */}
-        <div>
-          <h4 className="font-display text-sm font-semibold mb-4">Get in Touch</h4>
-          <ul className="space-y-3">
-            <li className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Mail size={14} className="text-primary shrink-0" /> LeadForge123@gmail.com
-            </li>
-            <li className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Phone size={14} className="text-primary shrink-0" /> 9350637421
-            </li>
-            <li className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Phone size={14} className="text-primary shrink-0" /> 6375759278
-            </li>
-            <li className="flex items-start gap-2 text-sm text-muted-foreground">
-              <MapPin size={14} className="text-primary shrink-0 mt-0.5" /> India
-            </li>
-          </ul>
+        <div className="flex gap-12 text-sm font-mono text-white/60">
+          <div className="flex flex-col gap-2">
+            <span className="text-white mb-2 uppercase tracking-widest">Socials</span>
+            <a href="#" className="hover:text-accent transition-colors">Instagram</a>
+            <a href="#" className="hover:text-accent transition-colors">LinkedIn</a>
+            <a href="#" className="hover:text-accent transition-colors">Twitter / X</a>
+          </div>
+          <div className="flex flex-col gap-2">
+            <span className="text-white mb-2 uppercase tracking-widest">Legal</span>
+            <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-accent transition-colors">Terms of Service</a>
+          </div>
         </div>
       </div>
 
-      <div className="border-t border-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-xs text-muted-foreground">© 2026 LeadForge. All rights reserved.</p>
-        <div className="flex gap-6">
-          <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Privacy</a>
-          <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Terms</a>
-        </div>
+      <div className="flex justify-between items-center pt-6 border-t border-white/5 text-xs font-mono text-white/30 uppercase tracking-wider">
+        <span>© 2025 LeadForge Inc.</span>
+        <span>All Rights Reserved.</span>
       </div>
-    </div>
-  </footer>
-);
+    </footer>
+  );
+};
 
 export default Footer;
