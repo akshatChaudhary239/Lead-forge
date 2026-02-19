@@ -93,8 +93,8 @@ const Contact = () => {
                 </form>
 
                 <div className="mt-20 flex flex-col md:flex-row justify-between text-white/40 font-mono text-sm contact-reveal">
-                    <a href="mailto:hello@leadforge.com" className="hover:text-accent transition-colors">hello@leadforge.com</a>
-                    <a href="tel:+15550000000" className="hover:text-accent transition-colors">+1 (555) 000-0000</a>
+                    <a href="mailto:[EMAIL_ADDRESS]" className="hover:text-accent transition-colors">[EMAIL_ADDRESS]</a>
+                    <a href="tel:+919350637421" className="hover:text-accent transition-colors">+91 9350637421</a>
                 </div>
             </div>
         </section>

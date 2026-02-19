@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
     {
         id: 1,
-        client: "Nebula Stream",
+        client: "DreamKnot creations",
         category: "Web Platform",
         video: "https://cdn.coverr.co/videos/coverr-surfer-catching-a-wave-5452/1080p.mp4", // Placeholder video
         image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"

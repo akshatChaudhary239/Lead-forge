@@ -12,8 +12,8 @@ const Footer = () => {
         <div className="flex gap-12 text-sm font-mono text-white/60">
           <div className="flex flex-col gap-2">
             <span className="text-white mb-2 uppercase tracking-widest">Socials</span>
-            <a href="#" className="hover:text-accent transition-colors">Instagram</a>
-            <a href="#" className="hover:text-accent transition-colors">LinkedIn</a>
+            <a href="https://www.instagram.com/_akkuchaudhary/" className="hover:text-accent transition-colors">Instagram</a>
+            <a href="https://www.linkedin.com/in/akku-chaudhary-b209b1259/" className="hover:text-accent transition-colors">LinkedIn</a>
             <a href="#" className="hover:text-accent transition-colors">Twitter / X</a>
           </div>
           <div className="flex flex-col gap-2">
