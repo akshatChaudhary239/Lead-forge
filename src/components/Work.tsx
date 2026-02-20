@@ -12,57 +12,55 @@ import bytebloomImage from "../assets/Bytebloom.png";
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
-
     {
         id: 1,
         client: "Style.AI",
         category: "Clothing Brand",
         video: "https://cdn.coverr.co/videos/coverr-stars-in-the-sky-3722/1080p.mp4",
-        image: styleAiImage
+        image: styleAiImage,
+        link: "https://sstyle-ai-smoky.vercel.app"
     },
     {
         id: 2,
         client: "DreamKnot creations",
         category: "Web Platform",
         video: "https://cdn.coverr.co/videos/coverr-surfer-catching-a-wave-5452/1080p.mp4", // Placeholder video
-        image: dreamknotImage
+        image: dreamknotImage,
+        link: "https://dreamknotcreations.com"
     },
-
     {
         id: 3,
         client: "Izora",
         category: "Clothing Brand",
         video: "https://cdn.coverr.co/videos/coverr-walking-in-a-forest-4488/1080p.mp4",
-        image: izoraImage
+        image: izoraImage,
+        link: "https://izora.vercel.app"
     },
     {
         id: 4,
         client: "Heavens",
         category: "Interior Design",
         video: "https://cdn.coverr.co/videos/coverr-coding-on-computer-screen-3629/1080p.mp4",
-        image: heavensImage
+        image: heavensImage,
+        link: "https://heavens-alpha.vercel.app"
     },
     {
         id: 5,
         client: "TheCyberVision",
         category: "Education Platform",
         video: "https://cdn.coverr.co/videos/coverr-walking-in-a-forest-4488/1080p.mp4",
-        image: cybervisionImage
+        image: cybervisionImage,
+        link: "https://cybervision-rajputsundrams-projects.vercel.app"
     },
     {
         id: 6,
         client: "ByteBloom",
         category: "Development",
         video: "https://cdn.coverr.co/videos/coverr-coding-on-computer-screen-3629/1080p.mp4",
-        image: bytebloomImage
+        image: bytebloomImage,
+        link: "https://bytebloom3-asoo.vercel.app"
     },
-    {
-        id: 7,
-        client: "Bookshala",
-        category: "E-commerce",
-        video: "https://cdn.coverr.co/videos/coverr-surfer-catching-a-wave-5452/1080p.mp4",
-        image: "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?q=80&w=2670&auto=format&fit=crop"
-    }
+
 ];
 
 const Work = () => {
@@ -125,8 +123,11 @@ const ProjectCard = ({ project }) => {
     const videoRef = useRef(null);
 
     return (
-        <div
-            className="project-card group relative aspect-[4/3] bg-card border border-white/10 overflow-hidden cursor-none"
+        <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-card group block relative aspect-[4/3] bg-card border border-white/10 overflow-hidden cursor-pointer"
             onMouseEnter={() => videoRef.current?.play()}
             onMouseLeave={() => {
                 const video = videoRef.current;
@@ -164,7 +165,7 @@ const ProjectCard = ({ project }) => {
                     →
                 </div>
             </div>
-        </div>
+        </a>
     );
 };
 
