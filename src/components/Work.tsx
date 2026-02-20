@@ -5,43 +5,71 @@ import { useGSAP } from "@gsap/react";
 import styleAiImage from "../assets/style-ai-image.png";
 import dreamknotImage from "../assets/DreamKnot-creations.png";
 import cybervisionImage from "../assets/CyberVision.png";
+import heavensImage from "../assets/Interior.png";
+import izoraImage from "../assets/izora.png";
 import bytebloomImage from "../assets/Bytebloom.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
+
     {
         id: 1,
-        client: "DreamKnot creations",
-        category: "Web Platform",
-        video: "https://cdn.coverr.co/videos/coverr-surfer-catching-a-wave-5452/1080p.mp4", // Placeholder video
-        image: dreamknotImage
-    },
-    {
-        id: 2,
         client: "Style.AI",
         category: "Clothing Brand",
         video: "https://cdn.coverr.co/videos/coverr-stars-in-the-sky-3722/1080p.mp4",
         image: styleAiImage
     },
     {
+        id: 2,
+        client: "DreamKnot creations",
+        category: "Web Platform",
+        video: "https://cdn.coverr.co/videos/coverr-surfer-catching-a-wave-5452/1080p.mp4", // Placeholder video
+        image: dreamknotImage
+    },
+
+    {
         id: 3,
-        client: "CyberVision",
+        client: "Izora",
+        category: "Clothing Brand",
+        video: "https://cdn.coverr.co/videos/coverr-walking-in-a-forest-4488/1080p.mp4",
+        image: izoraImage
+    },
+    {
+        id: 4,
+        client: "Heavens",
+        category: "Interior Design",
+        video: "https://cdn.coverr.co/videos/coverr-coding-on-computer-screen-3629/1080p.mp4",
+        image: heavensImage
+    },
+    {
+        id: 5,
+        client: "TheCyberVision",
         category: "Education Platform",
         video: "https://cdn.coverr.co/videos/coverr-walking-in-a-forest-4488/1080p.mp4",
         image: cybervisionImage
     },
     {
-        id: 4,
+        id: 6,
         client: "ByteBloom",
         category: "Development",
         video: "https://cdn.coverr.co/videos/coverr-coding-on-computer-screen-3629/1080p.mp4",
         image: bytebloomImage
+    },
+    {
+        id: 7,
+        client: "Bookshala",
+        category: "E-commerce",
+        video: "https://cdn.coverr.co/videos/coverr-surfer-catching-a-wave-5452/1080p.mp4",
+        image: "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?q=80&w=2670&auto=format&fit=crop"
     }
 ];
 
 const Work = () => {
     const containerRef = useRef(null);
+    const [showAll, setShowAll] = useState(false);
+
+    const visibleProjects = showAll ? projects : projects.slice(0, 4);
 
     useGSAP(() => {
         gsap.fromTo(".project-card",
@@ -75,14 +103,17 @@ const Work = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-                {projects.map((project) => (
+                {visibleProjects.map((project) => (
                     <ProjectCard key={project.id} project={project} />
                 ))}
             </div>
 
             <div className="mt-20 flex justify-center">
-                <button className="px-8 py-4 border border-accent text-accent rounded-full hover:bg-accent hover:text-black transition-all font-mono uppercase tracking-widest text-sm relative overflow-hidden group">
-                    <span className="relative z-10">View All Projects</span>
+                <button
+                    onClick={() => setShowAll(!showAll)}
+                    className="px-8 py-4 border border-accent text-accent rounded-full hover:bg-accent hover:text-black transition-all font-mono uppercase tracking-widest text-sm relative overflow-hidden group"
+                >
+                    <span className="relative z-10">{showAll ? "Show Less" : "View All Projects"}</span>
                     <div className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out -z-0" />
                 </button>
             </div>
