@@ -2,6 +2,10 @@ import { useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import styleAiImage from "../assets/style-ai-image.png";
+import dreamknotImage from "../assets/DreamKnot-creations.png";
+import cybervisionImage from "../assets/CyberVision.png";
+import bytebloomImage from "../assets/Bytebloom.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,28 +15,28 @@ const projects = [
         client: "DreamKnot creations",
         category: "Web Platform",
         video: "https://cdn.coverr.co/videos/coverr-surfer-catching-a-wave-5452/1080p.mp4", // Placeholder video
-        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"
+        image: dreamknotImage
     },
     {
         id: 2,
-        client: "Apex Finance",
-        category: "Brand Identity",
+        client: "Style.AI",
+        category: "Clothing Brand",
         video: "https://cdn.coverr.co/videos/coverr-stars-in-the-sky-3722/1080p.mp4",
-        image: "https://images.unsplash.com/photo-1620641788427-b9509f2d192f?q=80&w=2564&auto=format&fit=crop"
+        image: styleAiImage
     },
     {
         id: 3,
-        client: "Echo Systems",
-        category: "Marketing",
+        client: "CyberVision",
+        category: "Education Platform",
         video: "https://cdn.coverr.co/videos/coverr-walking-in-a-forest-4488/1080p.mp4",
-        image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2670&auto=format&fit=crop"
+        image: cybervisionImage
     },
     {
         id: 4,
-        client: "Quantum Labs",
+        client: "ByteBloom",
         category: "Development",
         video: "https://cdn.coverr.co/videos/coverr-coding-on-computer-screen-3629/1080p.mp4",
-        image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop"
+        image: bytebloomImage
     }
 ];
 
