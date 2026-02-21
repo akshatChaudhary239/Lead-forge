@@ -18,7 +18,7 @@ const projects = [
         category: "Clothing Brand",
         video: "https://cdn.coverr.co/videos/coverr-stars-in-the-sky-3722/1080p.mp4",
         image: styleAiImage,
-        link: "https://sstyle-ai-smoky.vercel.app"
+        link: "https://style-ai-smoky.vercel.app"
     },
     {
         id: 2,
