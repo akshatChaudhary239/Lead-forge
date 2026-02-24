@@ -8,6 +8,8 @@ import cybervisionImage from "../assets/CyberVision.png";
 import heavensImage from "../assets/Interior.png";
 import izoraImage from "../assets/izora.png";
 import bytebloomImage from "../assets/Bytebloom.png";
+import hiraCafeImage from "../assets/hira.png";
+import chemicalXImage from "../assets/chemical-x.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,12 +24,13 @@ const projects = [
     },
     {
         id: 2,
-        client: "DreamKnot creations",
-        category: "Web Platform",
-        video: "https://cdn.coverr.co/videos/coverr-surfer-catching-a-wave-5452/1080p.mp4", // Placeholder video
-        image: dreamknotImage,
-        link: "https://dreamknotcreations.com"
+        client: "Chemical-X-Cafe",
+        category: "Cafe",
+        video: "https://cdn.coverr.co/videos/coverr-walking-in-a-forest-4488/1080p.mp4",
+        image: chemicalXImage,
+        link: "https://chemical-x-cafe.vercel.app"
     },
+
     {
         id: 3,
         client: "Izora",
@@ -46,14 +49,22 @@ const projects = [
     },
     {
         id: 5,
-        client: "TheCyberVision",
-        category: "Education Platform",
-        video: "https://cdn.coverr.co/videos/coverr-walking-in-a-forest-4488/1080p.mp4",
-        image: cybervisionImage,
-        link: "https://cybervision-rajputsundrams-projects.vercel.app"
+        client: "Hira cafe",
+        category: "Cafe",
+        video: "https://cdn.coverr.co/videos/coverr-coding-on-computer-screen-3629/1080p.mp4",
+        image: hiraCafeImage,
+        link: "https://cafe-blond-phi.vercel.app"
     },
     {
         id: 6,
+        client: "DreamKnot creations",
+        category: "Web Platform",
+        video: "https://cdn.coverr.co/videos/coverr-surfer-catching-a-wave-5452/1080p.mp4", // Placeholder video
+        image: dreamknotImage,
+        link: "https://dreamknotcreations.com"
+    },
+    {
+        id: 7,
         client: "ByteBloom",
         category: "Development",
         video: "https://cdn.coverr.co/videos/coverr-coding-on-computer-screen-3629/1080p.mp4",
