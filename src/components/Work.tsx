@@ -24,7 +24,7 @@ const projects = [
     },
     {
         id: 2,
-        client: "Chemical-X-Cafe",
+        client: "Mechanical-X-Cafe",
         category: "Cafe",
         video: "https://cdn.coverr.co/videos/coverr-walking-in-a-forest-4488/1080p.mp4",
         image: chemicalXImage,
