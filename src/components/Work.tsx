@@ -42,7 +42,7 @@ const projects = [
     {
         id: 4,
         client: "Heavens",
-        category: "Interior Design",
+        category: "Interior Designer",
         video: "https://cdn.coverr.co/videos/coverr-coding-on-computer-screen-3629/1080p.mp4",
         image: heavensImage,
         link: "https://heavens-alpha.vercel.app"
