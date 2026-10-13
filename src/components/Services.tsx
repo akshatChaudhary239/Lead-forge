@@ -7,27 +7,27 @@ gsap.registerPlugin(ScrollTrigger);
 const services = [
     {
         id: "01",
-        title: "Performance Marketing",
-        description: "Data-driven campaigns that scale revenue and maximize ROAS across Meta, Google, and TikTok.",
-        tags: ["Paid Social", "PPC", "CRO"]
+        title: "AI Automation",
+        description: "Intelligent workflow automation, custom AI agent integrations, and LLM-powered pipelines that eliminate repetitive tasks and scale productivity effortlessly.",
+        tags: ["LLMs", "AI Agents", "Workflow Automation", "API Integration"]
     },
     {
         id: "02",
-        title: "Web Experience",
-        description: "High-end, motion-rich websites designed to convert traffic into loyal customers.",
-        tags: ["React", "WebGL", "motion"]
+        title: "Website Development",
+        description: "Modern, responsive, and blazing-fast web applications built with cutting-edge frameworks, fluid animations, and high-converting user interfaces.",
+        tags: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Three.js"]
     },
     {
         id: "03",
-        title: "Lead Generation",
-        description: "Systematic acquisition strategies to fill your pipeline with qualified, high-intent leads.",
-        tags: ["Funnels", "Automation", "CRM"]
+        title: "Digital Solutions",
+        description: "End-to-end digital architecture, cloud-ready backends, CRM configurations, and tailored software solutions that solve real business challenges.",
+        tags: ["System Architecture", "Cloud", "APIs", "Database Design"]
     },
     {
         id: "04",
-        title: "Brand Strategy",
-        description: "Positioning your brand as the market leader through compelling storytelling and visual identity.",
-        tags: ["Identity", "Positioning", "Copy"]
+        title: "Testing",
+        description: "Comprehensive quality assurance, automated test suites, end-to-end testing, and performance optimization ensuring bug-free, resilient deployments.",
+        tags: ["Unit Testing", "E2E Testing", "Vitest", "Playwright", "QA"]
     }
 ];
 
@@ -64,7 +64,7 @@ const Services = () => {
         <section id="services" ref={containerRef} className="relative w-full min-h-screen bg-bg-secondary text-white overflow-hidden flex flex-col justify-center">
             <div className="absolute top-10 left-10 md:top-20 md:left-20 z-10">
                 <h2 className="text-4xl md:text-8xl font-display font-bold uppercase tracking-tight leading-none mb-4">
-                    Our <span className="text-accent underline decoration-2 underline-offset-8">Expertise</span>
+                    My <span className="text-accent underline decoration-2 underline-offset-8">Expertise</span>
                 </h2>
             </div>
 

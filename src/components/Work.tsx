@@ -2,7 +2,8 @@ import { useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import styleAiImage from "../assets/style-ai-image.png";
+import getProspectaImage from "../assets/getprospecta.png";
+import fashionSkImage from "../assets/fashionsk.png";
 import dreamknotImage from "../assets/DreamKnot-creations.png";
 import cybervisionImage from "../assets/CyberVision.png";
 import heavensImage from "../assets/Interior.png";
@@ -16,23 +17,30 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
     {
         id: 1,
-        client: "Style.AI",
-        category: "Clothing Brand",
-        video: "https://cdn.coverr.co/videos/coverr-stars-in-the-sky-3722/1080p.mp4",
-        image: styleAiImage,
-        link: "https://style-ai-smoky.vercel.app"
+        client: "GetProspecta",
+        category: "B2B SaaS / Lead Gen",
+        video: "https://cdn.coverr.co/videos/coverr-coding-on-computer-screen-3629/1080p.mp4",
+        image: getProspectaImage,
+        link: "https://www.getprospecta.com"
     },
     {
         id: 2,
+        client: "FashionSK",
+        category: "Fashion & E-Commerce",
+        video: "https://cdn.coverr.co/videos/coverr-stars-in-the-sky-3722/1080p.mp4",
+        image: fashionSkImage,
+        link: "https://suvidha-web-olive.vercel.app/"
+    },
+    {
+        id: 3,
         client: "Mechanical-X-Cafe",
         category: "Cafe",
         video: "https://cdn.coverr.co/videos/coverr-walking-in-a-forest-4488/1080p.mp4",
         image: chemicalXImage,
         link: "https://chemical-x-cafe.vercel.app"
     },
-
     {
-        id: 3,
+        id: 4,
         client: "Izora",
         category: "Clothing Brand",
         video: "https://cdn.coverr.co/videos/coverr-walking-in-a-forest-4488/1080p.mp4",
@@ -40,7 +48,7 @@ const projects = [
         link: "https://izora.vercel.app"
     },
     {
-        id: 4,
+        id: 5,
         client: "Heavens",
         category: "Interior Designer",
         video: "https://cdn.coverr.co/videos/coverr-coding-on-computer-screen-3629/1080p.mp4",
@@ -48,7 +56,7 @@ const projects = [
         link: "https://heavens-alpha.vercel.app"
     },
     {
-        id: 5,
+        id: 6,
         client: "Hira cafe",
         category: "Cafe",
         video: "https://cdn.coverr.co/videos/coverr-coding-on-computer-screen-3629/1080p.mp4",
@@ -56,22 +64,21 @@ const projects = [
         link: "https://cafe-blond-phi.vercel.app"
     },
     {
-        id: 6,
+        id: 7,
         client: "DreamKnot creations",
         category: "Web Platform",
-        video: "https://cdn.coverr.co/videos/coverr-surfer-catching-a-wave-5452/1080p.mp4", // Placeholder video
+        video: "https://cdn.coverr.co/videos/coverr-surfer-catching-a-wave-5452/1080p.mp4",
         image: dreamknotImage,
         link: "https://dreamknotcreations.com"
     },
     {
-        id: 7,
+        id: 8,
         client: "ByteBloom",
         category: "Development",
         video: "https://cdn.coverr.co/videos/coverr-coding-on-computer-screen-3629/1080p.mp4",
         image: bytebloomImage,
         link: "https://bytebloom3-asoo.vercel.app"
     },
-
 ];
 
 const Work = () => {
@@ -101,12 +108,12 @@ const Work = () => {
         <section id="work" ref={containerRef} className="py-24 px-6 md:px-12 bg-bg-primary text-white">
             <div className="flex flex-col md:flex-row justify-between items-end mb-20 border-b border-white/10 pb-8">
                 <h2 className="text-5xl md:text-9xl font-display font-bold uppercase tracking-tighter leading-none">
-                    Select <br /> <span className="text-stroke text-transparent">Work</span>
+                    My <br /> <span className="text-stroke text-transparent">Work</span>
                 </h2>
                 <div className="text-right mt-8 md:mt-0">
                     <p className="font-mono text-sm text-white/50 mb-2">/ SELECTED PROJECTS 2024-2025</p>
                     <p className="max-w-xs text-white/80">
-                        Showcasing our finest digital craftsmanship and result-oriented campaigns.
+                        Showcasing my finest digital craftsmanship and result-oriented projects.
                     </p>
                 </div>
             </div>

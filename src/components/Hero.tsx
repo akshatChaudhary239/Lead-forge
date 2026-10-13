@@ -51,10 +51,10 @@ const Hero = () => {
             {/* Content */}
             <div className="relative z-20 text-center px-6">
                 <h1 ref={titleRef} className="hero-title text-6xl md:text-9xl font-display font-bold uppercase tracking-tighter leading-none mb-6">
-                    LeadForge <br /> <span className="text-stroke text-transparent">Growth Hub</span>
+                    Akshat's <br /> <span className="text-stroke text-transparent">Portfolio</span>
                 </h1>
                 <p className="hero-subtitle text-lg md:text-xl font-mono text-white/60 max-w-2xl mx-auto">
-                    Forging digital growth through data-driven performance marketing and high-end web experiences.
+                    Tech Lead & Builder — crafting high-performance web systems, AI integrations, and digital products.
                 </p>
             </div>
 

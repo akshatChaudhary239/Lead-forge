@@ -56,7 +56,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 py-4 glass text-white border-b border-white/10">
       <div className="flex items-center gap-4">
         <Link to="/" className="text-xl font-display font-bold tracking-tighter">
-          LEADFORGE
+          AKSHAT'S PORTFOLIO
         </Link>
         <div className="hidden md:flex items-center gap-2 text-xs font-mono text-white/50 border-l border-white/10 pl-4">
           <span className="relative flex h-2 w-2">
