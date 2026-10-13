@@ -9,7 +9,7 @@ import cybervisionImage from "../assets/CyberVision.png";
 import heavensImage from "../assets/Interior.png";
 import izoraImage from "../assets/izora.png";
 import bytebloomImage from "../assets/Bytebloom.png";
-import hiraCafeImage from "../assets/hira.png";
+import hiraCafeImage from "../assets/Hira.png";
 import chemicalXImage from "../assets/chemical-x.png";
 
 gsap.registerPlugin(ScrollTrigger);
